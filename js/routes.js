@@ -126,4 +126,70 @@ angular
         url: '/500',
         templateUrl: 'views/pages/500.html'
       })
+      .state('app.customer', {
+        url: '/customer',
+        abstract: true,
+        template: '<ui-view></ui-view>',
+        ncyBreadcrumb: {
+          label: 'Customer'
+        }
+      })
+      .state('app.customer.addcustomer', {
+        url: '/addcustomer',
+        templateUrl: 'views/addcustomer.html',
+        ncyBreadcrumb: {
+          label: 'Add Customer'
+        }
+      })
+      .state('app.customer.editcustomer', {
+        url: '/editcustomer',
+        templateUrl: 'views/editcustomer.html',
+        ncyBreadcrumb: {
+          label: 'Edit Customer'
+        }
+      })
+      .state('app.customer.viewcustomer', {
+        url: '/viewcustomer',
+        templateUrl: 'views/viewcustomer.html',
+        ncyBreadcrumb: {
+          label: 'View Customer'
+        }
+      })
+
+      .state('app.physiocenter', {
+        url: '/physiocenter',
+        abstract: true,
+        template: '<ui-view></ui-view>',
+        ncyBreadcrumb: {
+          label: 'Physio Center'
+        }
+      })
+      .state('app.physiocenter.addphysiocenter', {
+        url: '/addphysiocenter',
+        templateUrl: 'views/addphysiocenter.html',
+        ncyBreadcrumb: {
+          label: 'Add Physiocenter'
+        }
+      })
+      .state('app.physiocenter.editphysiocenter', {
+        url: '/editphysiocenter',
+        templateUrl: 'views/editphysiocenter.html',
+        ncyBreadcrumb: {
+          label: 'Edit Physiocenter'
+        }
+      })
+      .state('app.physiocenter.viewphysiocenter', {
+        url: '/viewphysiocenter',
+        templateUrl: 'views/viewphysiocenter.html',
+        ncyBreadcrumb: {
+          label: 'View Physiocenter'
+        }
+      })
+       .state('app.physioassign', {
+        url: '/physioassign',
+        templateUrl: 'views/physioassign.html',
+        ncyBreadcrumb: {
+          label: 'Physio Assign'
+        }
+      })
   }]);
